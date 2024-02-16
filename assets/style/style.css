@@ -13,18 +13,18 @@ body{
 
 
 .titulo__game {
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-family: var(--fonte-principal);
     font-weight: 500;
     color: var(--cor-fonte);
     font-size: 7vh;
     text-align: center;
-    text-shadow: 10px 20px 20px #8af7ff;
+    text-shadow: 5px 2px 3px #007179;
     /* filter: drop-shadow(10px 10px 10px white); */
 }
 
 .subtitulo__game {
-    margin: 5rem;
+    margin: 1rem;
     font-family: var(--fonte-principal);
     font-weight: 100;
     color: var(--cor-fonte);
@@ -33,53 +33,66 @@ body{
 }
 
 .game__principal {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns:5fr 8fr 8fr 5fr;
+    grid-template-areas:
+    "z  a b  c"
+    "z  a b  c"
+    "z  a b  c";
 }
 
 .imagem__game {
-    width: 150%;
+    width: 100%;
+}
+
+.img_chata{
+    margin: auto;
 }
 
 .computador__game {
-    padding-left: 20%;
-    margin-right: 10%;
+    display: flex;
+    grid-area: a;
 }
 
 .usuario__game {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: end;
+    grid-area: b;
+    margin: auto;
 }
 
 .usuario__play {
-    max-width: 25%;
-    height: auto;
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
+    justify-items: center;
 }
 
 .btn__game {
-    /* grid-column: 2/3; */
-    max-width: 30%;
     margin-left: 10%;
+    grid-area: c;
 }
 
 .btn__game__item {
     max-width: 50%;
     max-height: auto;
-    margin: 2rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
     background: transparent;
     border: 2px solid white;
     border-radius: 100px;
+    backdrop-filter: blur(10px);
 }
 
 .btn__game__item:hover {
-    padding: .5rem;
+    padding: .3rem .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
     background: linear-gradient(to bottom, white, black);
 }
 .btn__img{
-    width: 50%;
+    max-width: 50%;
+    height: auto;
 }
 
 .placar {
@@ -89,7 +102,7 @@ body{
 }
 .placar__titulo {
     font-size: 5vh;
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 .tabela {
@@ -121,7 +134,7 @@ body{
 
 .reset {
     font-size: 3vh;
-    padding: 3rem;
+    padding: 0.3rem;
     max-width: 50%;
     max-height: auto;
     margin: 2rem;
