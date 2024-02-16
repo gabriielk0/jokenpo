@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root{
+    --cor-fundo: #3f3f3f;
+    --cor-fonte: #FFFFFF;
+
+    --fonte-principal: "Protest Riot", sans-serif
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+
+.titulo__game {
+    margin-top: 5rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--cor-fonte);
+    font-size: 7vh;
+    text-align: center;
+    text-shadow: 10px 20px 20px #8af7ff;
+    /* filter: drop-shadow(10px 10px 10px white); */
+}
+
+.subtitulo__game {
+    margin: 5rem;
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+    color: var(--cor-fonte);
+    text-align: center;
+    font-size: 5vh;
+}
+
+.game__principal {
+    display: flex;
+    align-items: center;
+}
+
+.imagem__game {
+    width: 150%;
+}
+
+.computador__game {
+    padding-left: 20%;
+    margin-right: 10%;
+}
+
+.usuario__game {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.usuario__play {
+    max-width: 25%;
+    height: auto;
+}
+
+.btn__game {
+    /* grid-column: 2/3; */
+    max-width: 30%;
+    margin-left: 10%;
+}
+
+.btn__game__item {
+    max-width: 50%;
+    max-height: auto;
+    margin: 2rem;
+    background: transparent;
+    border: 1rem solid white;
+    border-radius: 100px;
+}
+
+.btn__game__item:hover {
+    padding: 1.125rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, white, black);
+}
+.btn__img{
+    width: 50%;
+}
+
+.placar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.placar__titulo {
+    font-size: 5vh;
+    margin-top: 10rem;
+}
+
+.tabela {
+    border: 3px solid white;
+    margin: 3rem;
+    padding: 25%;
+    border-collapse: collapse;
+    color: var(--cor-fonte);
+}
+.tabela__linha{
+    font-size: 7vh;
+    width: 6.5rem;
+    background-color: black;
+}
+
+.tabela__linha th{
+    border: 4px solid white;
+    padding: 0 4rem;
+    width: 50%;
+}
+
+.tabela__linha td{
+    border: 4px solid rgb(59, 59, 59);
+    color: black;
+    padding: 4rem;
+    background-color: white;
+    width: 50%;
+}
+
+.reset {
+    font-size: 3vh;
+    padding: 3rem;
+    max-width: 50%;
+    max-height: auto;
+    margin: 2rem;
+    background: transparent;
+    border: 1rem solid white;
+    border-radius: 100px;
+}
+
+.reset:hover {
+    padding: 3.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, white, black);
+}
+
+.rodape {
+    display: flex;
+    position: fixed;
+    align-self: flex-end
+}
+
+.rodape p{
+    font-size: 7vh;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel & Tesoura</title>
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./app/script.js" defer></script>
+    <script src="./app/sorteio.js" defer></script>
+    <script src="./app/placar.js" defer></script>
+</head>
+<body>
+    <main class="principal">
+        <h1 class="titulo__game">Pedra, Papel & Tesoura</h1>
+        <h2 class="subtitulo__game">Escolha uma das opções ao lado para jogar contra o computador</h2>
+        <section class="game__principal">
+            <div class="computador__game">
+                <img src="./assets/img/papel_direita.png" alt="Computador jogou papel" class="imagem__game opcao__computador">
+            </div>
+            <div class="usuario__game">
+                <div class="usuario__play">
+                    <img src="./assets/img/papel_esquerda.png" alt="Você jogou papel" class="imagem__game opcao__usuario">
+                </div>
+                <div class="btn__game">
+                    <button class="btn__game__item" id="papel"><img src="./assets/img/papel_esquerda.png" alt="opção papel" class="btn__img"></button>
+                    <button class="btn__game__item" id="pedra"><img src="./assets/img/pedra_esquerda.png" alt="opção pedra" class="btn__img"></button>
+                    <button class="btn__game__item" id="tesoura"><img src="./assets/img/tesoura_esquerda.png" alt="opção tesoura" class="btn__img"></button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="placar">
+            <h2 class="placar__titulo">Placar</h2>
+            <table class="tabela">
+                <tr class="tabela__linha">
+                    <th>Computador</th>
+                    <th>Você</th>
+                </tr>
+                <tr class="tabela__linha">
+                    <td>.</td>
+                    <td>.</td>
+                </tr>
+            </table>
+            <button class="reset">Resetar Placar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Gabriel</p>
+    </footer>
+</body>
+</html>
