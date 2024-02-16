@@ -68,12 +68,12 @@ body{
     max-height: auto;
     margin: 2rem;
     background: transparent;
-    border: 1rem solid white;
+    border: 2px solid white;
     border-radius: 100px;
 }
 
 .btn__game__item:hover {
-    padding: 1.125rem;
+    padding: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
     background: linear-gradient(to bottom, white, black);
@@ -126,12 +126,12 @@ body{
     max-height: auto;
     margin: 2rem;
     background: transparent;
-    border: 1rem solid white;
+    border: 2px solid white;
     border-radius: 100px;
 }
 
 .reset:hover {
-    padding: 3.5rem;
+    padding: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
     background: linear-gradient(to bottom, white, black);
