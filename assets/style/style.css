@@ -138,8 +138,9 @@ body{
 }
 
 .reset {
+    color: var(--cor-fonte);
     font-size: 3vh;
-    padding: 0.3rem;
+    padding: 1rem;
     max-width: 50%;
     max-height: auto;
     margin: 2rem;
@@ -149,7 +150,7 @@ body{
 }
 
 .reset:hover {
-    padding: .5rem;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
     background: linear-gradient(to bottom, white, black);
