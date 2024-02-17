@@ -24,45 +24,57 @@ function chuteComputador() {
         console.log('numero:',numero)
     }
 
+    debugger
+
     switch(botaoClicado) {
         case 'papel':
-            if (papelComp.includes(numero)) {
-                console.log('Empate')
-                console.log('---------')
-            } else if(pedraComp.includes(numero)){
-                console.log('Você ganhou')
-                console.log('---------')
-            } else {
-                console.log('Você perdeu!')
-                console.log('---------')
-            }
+            switch(numero) {
+                case papelComp.includes(numero):
+                    console.log('Empate')
 
-        case 'pedra':
-            if (papelComp.includes(numero)) {
-                console.log('Você perdeu!')
-                console.log('---------')
-            } else if(pedraComp.includes(numero)){
-                console.log('Empate')
-                console.log('---------')
-            } else {
-                console.log('Você Ganhou!')
-                console.log('---------')
-            }
+                case pedraComp.includes(numero):
+                    console.log('ganhhou')
 
-        case 'tesoura':
-            if (papelComp.includes(numero)) {
-                console.log('Você ganhou')
-                console.log('---------')
-            } else if(pedraComp.includes(numero)){
-                console.log('Você perdeu')
-                console.log('---------')
-            } else {
-                console.log('Empate')
-                console.log('---------')
-            }
+                default:
+                    console.log('perdeu')
+
+            // if (papelComp.includes(numero)) {
+            //     console.log('Empate')
+            //     console.log('---------')
+            // } else if(pedraComp.includes(numero)){
+            //     console.log('Você ganhou')
+            //     console.log('---------')
+            // } else {
+            //     console.log('Você perdeu!')
+            //     console.log('---------')
+            // }
+
+        // case 'pedra':
+        //     if (papelComp.includes(numero)) {
+        //         console.log('Você perdeu!')
+        //         console.log('---------')
+        //     } else if(pedraComp.includes(numero)){
+        //         console.log('Empate')
+        //         console.log('---------')
+        //     } else {
+        //         console.log('Você Ganhou!')
+        //         console.log('---------')
+        //     }
+
+        // case 'tesoura':
+        //     if (papelComp.includes(numero)) {
+        //         console.log('Você ganhou')
+        //         console.log('---------')
+        //     } else if(pedraComp.includes(numero)){
+        //         console.log('Você perdeu')
+        //         console.log('---------')
+        //     } else {
+        //         console.log('Empate')
+        //         console.log('---------')
+        //     }
     }
 }
-
+}
 function comptOpcao (caminho) {
     opcaoComp.src = (caminho);
 }
@@ -71,5 +83,3 @@ function opcaoBtnUsuario (caminho) {
     playUsuario.src = caminho;
     chuteComputador();
 }
-
-
