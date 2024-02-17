@@ -1,11 +1,9 @@
+let escolhaComp = '';
+
 function gerarNumero () {
     const maiorValor = 9;
     return parseInt(Math.random() * maiorValor + 1);
 }
-
-let escolhaComp = '';
-
-
 
 function chuteComputador() {
     const papelComp = [1, 4, 7];
@@ -60,18 +58,18 @@ function comparar (botaoClicado, escolhaComp) {
                 }
             break;
         case 'tesoura':
-        switch (escolhaComp) {
-                case 'papel':
-                    console.log('ganhou')
-                    break;
-                case 'pedra':
-                    console.log('perdeu')
-                    break;
-                case 'tesoura':
-                    console.log('empate')
-                    break;
+            switch (escolhaComp) {
+                    case 'papel':
+                        console.log('ganhou')
+                        break;
+                    case 'pedra':
+                        console.log('perdeu')
+                        break;
+                    case 'tesoura':
+                        console.log('empate')
+                        break;
             }
-        break;
+            break;
     }
 }
 
