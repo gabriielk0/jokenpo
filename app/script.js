@@ -1,3 +1,4 @@
+
 const btnUsuarioPedra = document.querySelector('#pedra')
 const btnUsuarioPapel = document.querySelector('#papel')
 const btnUsuarioTesoura = document.querySelector('#tesoura')
@@ -18,6 +19,4 @@ btnUsuarioPapel.addEventListener('click', () => {
 btnUsuarioTesoura.addEventListener('click', () => {
     opcaoBtnUsuario('./assets/img/tesoura_esquerda.png')
     botaoClicado = 'tesoura';
-})
-;
-
+});
