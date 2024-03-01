@@ -27,6 +27,8 @@ function chuteComputador() {
         console.log('numero:',numero)
     }
 
+    return escolhaComp
+
 }
 
 function comparar (botaoClicado, escolhaComp) {
@@ -80,4 +82,8 @@ function comptOpcao (caminho) {
 function opcaoBtnUsuario (caminho) {
     playUsuario.src = caminho;
     chuteComputador();
+}
+
+export const conecta = {
+    chuteComputador
 }
