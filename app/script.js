@@ -1,3 +1,4 @@
+import { cconecta } from "./sorteio.js";
 
 const btnUsuarioPedra = document.querySelector('#pedra')
 const btnUsuarioPapel = document.querySelector('#papel')
@@ -20,3 +21,7 @@ btnUsuarioTesoura.addEventListener('click', () => {
     opcaoBtnUsuario('./assets/img/tesoura_esquerda.png')
     botaoClicado = 'tesoura';
 });
+
+console.log(escolhaComp)
+
+
